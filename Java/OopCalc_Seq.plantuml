@@ -1,0 +1,56 @@
+@startuml Calculator
+
+title Calculator
+
+actor User
+
+participant Main
+participant Calc
+participant CalcAb
+participant CalcIf
+
+User -> Main: Main()
+Main -> Calc: create instance
+activate Calc
+Calc -> Calc: getUserInput()
+Calc --> User: Ask Input
+User -> Calc: Provides INput
+
+Calc -> Calc: getValues.nextInt()
+Calc --> Calc: i
+
+Calc --> User: Ask Input
+User -> Calc: Provides INput
+
+Calc -> Calc: getValues.nextInt()
+Calc --> Calc: j
+
+
+Calc -> CalcAb: add(i, j)
+activate CalcAb
+CalcAb -> CalcIf: add()
+activate CalcIf
+CalcIf --> CalcAb: add()
+CalcAb --> Calc: i+j
+
+Calc -> CalcAb: sub(i, j)
+CalcAb -> CalcIf: sub()
+CalcIf --> CalcAb: sub()
+CalcAb --> Calc: i-j
+
+
+Calc -> CalcAb: mul(i, j)
+CalcAb -> CalcIf: mul()
+CalcIf --> CalcAb: mul()
+CalcAb --> Calc: i*j
+
+Calc -> CalcAb: div(i, j)
+CalcAb -> CalcIf: div()
+CalcIf --> CalcAb: div()
+CalcAb --> Calc: i/j
+
+deactivate CalcIf
+deactivate CalcAb
+deactivate Calc
+
+@enduml
