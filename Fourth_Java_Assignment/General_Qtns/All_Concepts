@@ -1,0 +1,280 @@
+// Abstract Class
+abstract class Shape {
+    abstract void draw();
+}
+
+// Singleton Class
+class Singleton {
+    private static Singleton instance;
+
+    private Singleton() {
+        // Private constructor to prevent instantiation
+    }
+
+    public static Singleton getInstance() {
+        if (instance == null) {
+            instance = new Singleton();
+        }
+        return instance;
+    }
+
+    public void showMessage() {
+        System.out.println("Singleton class method called");
+    }
+}
+
+// Interface
+interface Sound {
+    void makeSound();
+}
+
+// Class demonstrating Encapsulation
+class Student {
+    private String name;
+    private int age;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        if (age >= 0) {
+            this.age = age;
+        } else {
+            System.out.println("Invalid age");
+        }
+    }
+}
+
+// Class demonstrating Inheritance
+class Animal {
+    void eat() {
+        System.out.println("Animal is eating");
+    }
+}
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Dog is barking");
+    }
+}
+
+// Class demonstrating Abstraction
+abstract class Bank {
+    abstract void interestRate();
+}
+
+class SBI extends Bank {
+    void interestRate() {
+        System.out.println("SBI Interest Rate: 4%");
+    }
+}
+
+class HDFC extends Bank {
+    void interestRate() {
+        System.out.println("HDFC Interest Rate: 5%");
+    }
+}
+
+// Class demonstrating Data Hiding
+class Employee {
+    private String name;
+    private double salary;
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+}
+
+// Class demonstrating Polymorphism
+class Calculator {
+    int add(int a, int b) {
+        return a + b;
+    }
+
+    double add(double a, double b) {
+        return a + b;
+    }
+
+    // Overloading with a different number of parameters
+    int add(int a, int b, int c) {
+        return a + b + c;
+    }
+
+    // Overriding
+    void display() {
+        System.out.println("Calculator");
+    }
+}
+
+class ScientificCalculator extends Calculator {
+    // Overriding
+    void display() {
+        System.out.println("Scientific Calculator");
+    }
+}
+
+// Class demonstrating Use of Super Keyword
+class ParentClass {
+    void display() {
+        System.out.println("Parent Class");
+    }
+}
+
+class ChildClass extends ParentClass {
+    void display() {
+        super.display(); // Calls the display method of the parent class
+        System.out.println("Child Class");
+    }
+}
+
+// Class demonstrating Use of This Keyword
+class SampleClass {
+    int x;
+
+    SampleClass(int x) {
+        this.x = x; // "this" is used to refer to the current instance variable
+    }
+}
+
+// Class demonstrating Usage of Static Keyword
+class Counter {
+    static int count = 0; // Static variable shared by all instances
+
+    Counter() {
+        count++; 
+    }
+
+    static void displayCount() {
+        System.out.println("Count: " + count);
+    }
+}
+
+// Class demonstrating Usage of Access Modifiers
+class AccessModifiersDemo {
+    private int privateVar;
+    int defaultVar;
+    protected int protectedVar;
+    public int publicVar;
+
+    private void privateMethod() {
+        System.out.println("Private Method");
+    }
+
+    void defaultMethod() {
+        System.out.println("Default Method");
+    }
+
+    protected void protectedMethod() {
+        System.out.println("Protected Method");
+    }
+
+    public void publicMethod() {
+        System.out.println("Public Method");
+    }
+}
+
+// Main Class
+public class Main {
+
+    public static void main(String[] args) {
+        // Abstract Class
+        Shape circle = new Shape() {
+            @Override
+            void draw() {
+                System.out.println("Drawing a circle");
+            }
+        };
+        circle.draw();
+
+        // Singleton Class
+        Singleton singletonInstance = Singleton.getInstance();
+        singletonInstance.showMessage();
+
+        // Interface
+        class Cat implements Sound {
+            public void makeSound() {
+                System.out.println("Meow");
+            }
+        }
+
+        Cat cat = new Cat();
+        cat.makeSound();
+
+        // Encapsulation
+        Student student = new Student();
+        student.setName("John");
+        student.setAge(20);
+        System.out.println("Student Name: " + student.getName());
+        System.out.println("Student Age: " + student.getAge());
+
+        // Inheritance
+        Dog myDog = new Dog();
+        myDog.eat();
+        myDog.bark();
+
+        // Abstraction
+        Bank sbi = new SBI();
+        sbi.interestRate();
+
+        Bank hdfc = new HDFC();
+        hdfc.interestRate();
+
+        // Data Hiding
+        Employee employee = new Employee();
+        employee.setName("Alice");
+        employee.setSalary(50000);
+        System.out.println("Employee Name: " + employee.getName());
+        System.out.println("Employee Salary: " + employee.getSalary());
+
+        // Polymorphism
+        Calculator simpleCalc = new Calculator();
+        System.out.println("Sum (int): " + simpleCalc.add(5, 3));
+        System.out.println("Sum (double): " + simpleCalc.add(5.5, 3.5));
+
+        ScientificCalculator scientificCalc = new ScientificCalculator();
+        System.out.println("Sum (int): " + scientificCalc.add(5, 3));
+        System.out.println("Sum (double): " + scientificCalc.add(5.5, 3.5));
+
+        // Super Keyword
+        ChildClass childObj = new ChildClass();
+        childObj.display();
+
+        // This Keyword
+        SampleClass obj = new SampleClass(10);
+        System.out.println("Value of x: " + obj.x);
+
+        // Static Keyword
+        Counter c1 = new Counter();
+        Counter c2 = new Counter();
+        Counter c3 = new Counter();
+        Counter.displayCount();
+
+        // Access Modifiers
+        AccessModifiersDemo accessDemo = new AccessModifiersDemo();
+        // accessDemo.privateMethod();
+        // accessDemo.defaultMethod();
+        // accessDemo.protectedMethod();
+        accessDemo.publicMethod();
+    }
+}
