@@ -38,5 +38,4 @@ public class Q2 {
         }
         return -1;
     }
-} 
-
+}
