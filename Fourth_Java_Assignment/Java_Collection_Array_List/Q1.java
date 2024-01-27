@@ -1,9 +1,11 @@
+//Write a Java program to create an array list, add some colors (strings), and print out the collection.
+
 import java.util.ArrayList;
 
 public class Q1 {  
     public static void main(String[] args) {
 
-        // Create an ArrayList to store colors
+        // Create an ArrayList
         ArrayList<String> colorList = new ArrayList<>();
 
         // Add some colors to the ArrayList

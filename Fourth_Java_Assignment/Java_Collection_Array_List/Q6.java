@@ -1,7 +1,10 @@
+//Write a Java program to remove the third element from an array list.
+
 import java.util.ArrayList;
 
 public class Q6 {
     public static void main(String[] args) {
+
         // Create an ArrayList to store numbers
         ArrayList<Integer> numbersList = new ArrayList<>();
 
@@ -16,7 +19,7 @@ public class Q6 {
         System.out.println("Original ArrayList: " + numbersList);
 
         // Remove the third element
-        int indexToRemove = 2; // Index of the element to remove
+        int indexToRemove = 2; 
         numbersList.remove(indexToRemove);
 
         // Print the ArrayList after removal

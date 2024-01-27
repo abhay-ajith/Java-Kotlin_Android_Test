@@ -1,3 +1,5 @@
+//Write a Java program to copy one array list into another. 
+
 import java.util.ArrayList;
 
 public class Q9 {
@@ -13,7 +15,7 @@ public class Q9 {
         // Print the original source ArrayList
         System.out.println("Source ArrayList: " + sourceList);
 
-        // Create a new ArrayList and copy the elements from the source ArrayList
+        // Create a new ArrayList and copy 
         ArrayList<String> destinationList = new ArrayList<>(sourceList);
 
         // Print the destination ArrayList

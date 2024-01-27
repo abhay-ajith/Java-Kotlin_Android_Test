@@ -1,8 +1,12 @@
+//Write a Java program to shuffle elements in an array list.
+
 import java.util.ArrayList;
 import java.util.Collections;
 
 public class Q10 {
     public static void main(String[] args) {
+
+
         // Create an ArrayList to store elements
         ArrayList<Integer> numbersList = new ArrayList<>();
 
@@ -16,7 +20,7 @@ public class Q10 {
         // Print the original ArrayList
         System.out.println("Original ArrayList: " + numbersList);
 
-        // Shuffle the elements in the ArrayList
+        // Shuffling
         Collections.shuffle(numbersList);
 
         // Print the ArrayList after shuffling

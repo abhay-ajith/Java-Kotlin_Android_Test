@@ -1,3 +1,5 @@
+//Write a Java program to update an array element by the given element. 
+
 import java.util.ArrayList;
 
 public class Q5 {
@@ -16,8 +18,8 @@ public class Q5 {
         System.out.println("Original ArrayList: " + numbersList);
 
         // Update the element at a specific index
-        int indexToUpdate = 2; // Index of the element to update
-        int newNumber = 35; // New element to replace the existing one
+        int indexToUpdate = 2; 
+        int newNumber = 35; 
         numbersList.set(indexToUpdate, newNumber);
 
         // Print the ArrayList after the update

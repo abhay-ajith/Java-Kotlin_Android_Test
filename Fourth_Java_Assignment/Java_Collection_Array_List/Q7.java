@@ -1,3 +1,5 @@
+//Write a Java program to search for an element in an array list. 
+
 import java.util.ArrayList;
 
 public class Q7 {

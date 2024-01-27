@@ -1,3 +1,5 @@
+//Write a Java program to retrieve an element (at a specified index) from a given array list. 
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -8,6 +10,7 @@ public class Q4 {
         System.out.println("enter the index : ");
         Scanner sc =new Scanner(System.in);
         int index= sc.nextInt();
+        
         // Add some  to the ArrayList
         List.add(1);
         List.add(2);
