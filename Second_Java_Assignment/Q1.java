@@ -1,9 +1,4 @@
-//•	Write a Java program to sum the values of an array and the average value of array elements.
-
-import java.util.Scanner;
-
-
-public class Q1 {
+ic class Q1 {
     public static void main(String[] args) {
         
         // Get array size from the user

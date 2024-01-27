@@ -1,13 +1,10 @@
-//•	Write a Java program to remove a specific element from an array.
-
 import java.util.Scanner;
-
 
 public class Q3 {
     public static void main(String[] args) {
 
         // Get array size from the user
-        Scanner sc = new sScanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.print("Enter the size of the array: ");
         int size = sc.nextInt();
 
@@ -46,8 +43,6 @@ public class Q3 {
                 newArray[newIndex++] = array[i];
             }
         }
-
         return newArray;
     }
-    
 }
