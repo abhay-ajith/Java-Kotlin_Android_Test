@@ -1,3 +1,5 @@
+//Write a Java program to insert elements into the linked list at the first and last positions.
+
 package Java_Collection_Linkedlist;
 
 import java.util.LinkedList;

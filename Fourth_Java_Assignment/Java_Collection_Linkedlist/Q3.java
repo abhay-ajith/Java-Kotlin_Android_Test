@@ -1,3 +1,5 @@
+//Write a Java program to iterate through all elements in a linked list starting at the specified position. 
+
 package Java_Collection_Linkedlist;
 
 import java.util.Iterator;

@@ -1,3 +1,5 @@
+//Write a Java program to get the first and last occurrence of the specified elements in a linked list. 
+
 package Java_Collection_Linkedlist;
 
 import java.util.LinkedList;
