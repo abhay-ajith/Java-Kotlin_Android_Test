@@ -1,3 +1,5 @@
+//Write a Java program to iterate through all elements in a hash list. 
+
 package Java_Collection_HashSet;
 
 import java.util.HashSet;

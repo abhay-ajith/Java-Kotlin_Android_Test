@@ -1,3 +1,5 @@
+//Write a Java program to test if a hash set is empty or not.
+
 package Java_Collection_HashSet;
 
 import java.util.HashSet;

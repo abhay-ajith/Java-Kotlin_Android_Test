@@ -1,3 +1,5 @@
+//Write a Java program to empty an hash set.
+
 package Java_Collection_HashSet;
 
 import java.util.HashSet;

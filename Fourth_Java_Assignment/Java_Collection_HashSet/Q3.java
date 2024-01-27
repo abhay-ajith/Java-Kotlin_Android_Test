@@ -1,3 +1,5 @@
+//Write a Java program to get the number of elements in a hash set. 
+
 package Java_Collection_HashSet;
 
 import java.util.HashSet;

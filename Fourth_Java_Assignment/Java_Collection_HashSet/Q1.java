@@ -1,3 +1,5 @@
+//. Write a Java program to append the specified element to the end of a hash set.
+
 package Java_Collection_HashSet;
 
 import java.util.HashSet;
