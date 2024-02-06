@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class Q4 {
     public static void main(String[] args) {
+        
         // Create an ArrayList to store elements
         ArrayList<Integer> List = new ArrayList<>();
         System.out.println("enter the index : ");

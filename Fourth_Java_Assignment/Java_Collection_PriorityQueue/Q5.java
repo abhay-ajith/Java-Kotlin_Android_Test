@@ -21,7 +21,7 @@ public class Q5 {
         // Remove all elements from the priority queue
         priorityQueue.clear();
 
-        // Print the priority queue after removal
+        // Print the priority queue 
         System.out.println("PriorityQueue after removing all elements: " + priorityQueue);
     }
     
